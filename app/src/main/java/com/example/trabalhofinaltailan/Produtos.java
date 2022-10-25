@@ -3,6 +3,8 @@ package com.example.trabalhofinaltailan;
 
 public class Produtos {
     private String id;
+    private String nome;
+    private String disponivel;
 
     public String getId() {
         return id;
@@ -28,8 +30,7 @@ public class Produtos {
         this.disponivel = disponivel;
     }
 
-    private String nome;
-    private String disponivel;
+
 
     @Override
     public String toString() {
