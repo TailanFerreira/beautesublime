@@ -12,6 +12,7 @@ import java.util.concurrent.ExecutionException;
 public class MainActivity extends AppCompatActivity {
 private Button btn_produtos;
 private EditText listagem_produtos;
+private Button btn_clientes;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +32,14 @@ private EditText listagem_produtos;
                 } catch (ExecutionException e) {
                     e.printStackTrace();
                 }
+            }
+        });
+
+        Button btn_clientes = findViewById(R.id.btn_cliente);
+        btn_clientes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setContentView(R.layout.activity_cliente);
             }
         });
     }

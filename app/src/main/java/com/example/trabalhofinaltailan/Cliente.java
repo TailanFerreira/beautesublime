@@ -1,6 +1,6 @@
 package com.example.trabalhofinaltailan;
 
-public class Cliente {
+public class Cliente  {
     private int id;
     private String nome;
     private String cpf;
