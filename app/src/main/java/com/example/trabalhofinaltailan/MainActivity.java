@@ -2,6 +2,7 @@ package com.example.trabalhofinaltailan;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -39,7 +40,8 @@ private Button btn_clientes;
         btn_clientes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.activity_cliente);
+                Intent intent = new Intent(getApplicationContext(), Clientes.class);
+                startActivity(intent);
             }
         });
     }
