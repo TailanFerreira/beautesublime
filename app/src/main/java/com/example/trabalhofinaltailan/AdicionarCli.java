@@ -1,6 +1,7 @@
 package com.example.trabalhofinaltailan;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,11 +17,18 @@ public class AdicionarCli extends AppCompatActivity {
     private EditText endereco;
     private EditText email;
     private Button btn_salvar;
+    private Button btn_voltar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_criacacliente);
+
+        EditText nome = findViewById(R.id.nome_cli);
+        EditText cpf = findViewById(R.id.cpf_cli);
+        EditText telefone = findViewById(R.id.telefone_cli);
+        EditText endereco = findViewById(R.id.endereco_cli);
+        EditText email = findViewById(R.id.email_cli);
 
         Button btn_salvar = findViewById(R.id.btn_salvar);
         btn_salvar.setOnClickListener(new View.OnClickListener() {
@@ -43,6 +51,15 @@ public class AdicionarCli extends AppCompatActivity {
                     Toast toast = Toast.makeText(contexto, texto, duracao);
                     toast.show();
                 }
+        });
+
+        Button btn_voltar = findViewById(R.id.btn_voltar);
+        btn_voltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Clientes.class);
+                startActivity(intent);
+            }
         });
     }
 }

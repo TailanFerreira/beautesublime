@@ -1,5 +1,6 @@
 package com.example.trabalhofinaltailan;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,9 +23,19 @@ private Button btn_informacoes;
         btn_adicionar_cli.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.activity_criacacliente);
+                Intent intent = new Intent(getApplicationContext(), AdicionarCli.class);
+                startActivity(intent);
             }
 
+        });
+
+        Button btn_informacoes = findViewById(R.id.btn_informacoes_cli);
+        btn_informacoes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), InformacoesClientes.class);
+                startActivity(intent);
+            }
         });
     }
 }
