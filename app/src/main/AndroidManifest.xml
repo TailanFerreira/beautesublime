@@ -32,6 +32,7 @@
         <activity android:name=".InformacoesClientes" />
         <activity android:name=".Criar_ficha_sobr" />
         <activity android:name=".Fichas_sobran" />
+        <activity android:name=".Sobrancelhas_informacoes" />
     </application>
 
 </manifest>

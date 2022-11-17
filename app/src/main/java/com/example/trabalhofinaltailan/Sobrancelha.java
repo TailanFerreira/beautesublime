@@ -19,9 +19,7 @@ public class Sobrancelha {
         return espaço_sobrancelha;
     }
 
-    public void setEspaço_sobrancelha(String espaço_sobrancelha) {
-        this.espaço_sobrancelha = espaço_sobrancelha;
-    }
+    public void setEspaço_sobrancelha(String espaço_sobrancelha) { this.espaço_sobrancelha = espaço_sobrancelha; }
 
     public String getEspessura() {
         return espessura;

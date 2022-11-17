@@ -51,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="Vizualizar ou editar" />
+            android:text="Vizualizar Sobrancelha" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

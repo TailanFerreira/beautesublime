@@ -33,10 +33,10 @@ public class SobrancelhaDAO {
         while (cursor.moveToNext()) {
             Sobrancelha model = new Sobrancelha();
             model.setId(cursor.getInt(0));
-            model.setEspaço_sobrancelha(cursor.getString(2));
-            model.setEspessura(cursor.getString(3));
-            model.setAltura_inicial(cursor.getString(4));
-            model.setAltura_final(cursor.getString(5));
+            model.setEspaço_sobrancelha(cursor.getString(1));
+            model.setEspessura(cursor.getString(2));
+            model.setAltura_inicial(cursor.getString(3));
+            model.setAltura_final(cursor.getString(4));
             lista.add(model);
         }
 
