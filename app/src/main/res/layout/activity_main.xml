@@ -19,16 +19,16 @@
             android:text="Clientes" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btn_sobrancelhas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Sobrancelhas" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btn_cilios"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Cílios" />
 
         <Button
             android:id="@+id/button6"

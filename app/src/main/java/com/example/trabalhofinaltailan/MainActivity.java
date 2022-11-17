@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
 private Button btn_produtos;
 private EditText listagem_produtos;
 private Button btn_clientes;
+private Button btn_sobrancelhas;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +42,15 @@ private Button btn_clientes;
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Clientes.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btn_sobrancelhas = findViewById(R.id.btn_sobrancelhas);
+        btn_sobrancelhas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Sobrancelhas_informacoes.class);
                 startActivity(intent);
             }
         });

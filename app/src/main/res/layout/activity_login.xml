@@ -6,71 +6,66 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="235dp"
+            android:layout_weight="1"
+            tools:srcCompat="@drawable/Logo" />
+
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="0dp"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Usuário:" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="235dp"
-                android:layout_weight="1"
-                tools:srcCompat="@drawable/Logo" />
+        <EditText
+            android:id="@+id/campo_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="(Usuário)"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="10dp"
-                android:text="Usuário:" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Senha:" />
 
-            <EditText
-                android:id="@+id/campo_usuario"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:hint="(Usuário)"
-                android:inputType="textPersonName"
-                android:padding="15dp" />
+        <EditText
+            android:id="@+id/campo_senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="(Senha)"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="10dp"
-                android:text="Senha:" />
-
-            <EditText
-                android:id="@+id/campo_senha"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:hint="(Senha)"
-                android:inputType="textPersonName"
-                android:padding="15dp" />
-
-            <Button
-                android:id="@+id/btn_entrar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="#00BCD4"
-                android:text="Entrar"
-                app:iconTint="#00BCD4" />
-        </LinearLayout>
-
-    </RelativeLayout>
+        <Button
+            android:id="@+id/btn_entrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00BCD4"
+            android:text="Entrar"
+            app:iconTint="#00BCD4" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

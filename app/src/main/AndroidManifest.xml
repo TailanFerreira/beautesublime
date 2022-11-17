@@ -16,9 +16,6 @@
         android:theme="@style/Theme.TrabalhoFinalTailan"
         tools:targetApi="31">
         <activity
-            android:name=".teste"
-            android:exported="false" />
-        <activity
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
@@ -29,10 +26,12 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity android:name=".Clientes" />
         <activity android:name=".AdicionarCli" />
         <activity android:name=".InformacoesClientes" />
+        <activity android:name=".Criar_ficha_sobr" />
+        <activity android:name=".Fichas_sobran" />
     </application>
 
 </manifest>

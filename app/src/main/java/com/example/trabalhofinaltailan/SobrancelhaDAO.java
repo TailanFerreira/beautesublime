@@ -18,7 +18,6 @@ public class SobrancelhaDAO {
 
     public long inserir(Sobrancelha model) {
         ContentValues values = new ContentValues();
-        values.put("codigo_cliente", model.getCod_cliente());
         values.put("espaço_sobrancelha", model.getEspaço_sobrancelha());
         values.put("espessura", model.getEspessura());
         values.put("altura_inicial", model.getAltura_inicial());
@@ -30,11 +29,10 @@ public class SobrancelhaDAO {
 
     public ArrayList<Sobrancelha> listar() {
         ArrayList<Sobrancelha> lista = new ArrayList<>();
-        Cursor cursor = banco.query("sobran", new String[]{"id", "cod_cli", "espa_sobra", "espessura", "altura_ini", "altura_final"}, null, null, null, null, null);
+        Cursor cursor = banco.query("sobran", new String[]{"id", "espa_sobra", "espessura", "altura_ini", "altura_final"}, null, null, null, null, null);
         while (cursor.moveToNext()) {
             Sobrancelha model = new Sobrancelha();
             model.setId(cursor.getInt(0));
-            model.setCod_cliente(cursor.getInt(1));
             model.setEspaço_sobrancelha(cursor.getString(2));
             model.setEspessura(cursor.getString(3));
             model.setAltura_inicial(cursor.getString(4));
@@ -47,7 +45,7 @@ public class SobrancelhaDAO {
 
     public Sobrancelha ler(int id) {
         Sobrancelha model = new Sobrancelha();
-        Cursor cursor = banco.query("sobran", new String[]{"id","cod_cli", "espa_sobra", "espessura", "altura_ini", "altura_final"}, "id = ?", new String[]{String.valueOf(id)}, null, null, null);
+        Cursor cursor = banco.query("sobran", new String[]{"id", "espa_sobra", "espessura", "altura_ini", "altura_final"}, "id = ?", new String[]{String.valueOf(id)}, null, null, null);
         while (cursor.moveToNext()) {
             model.setId(cursor.getInt(0));
             model.setEspaço_sobrancelha(cursor.getString(1));
