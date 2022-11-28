@@ -7,25 +7,46 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent">
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Para adicionar um novo Cliente" />
 
         <Button
             android:id="@+id/btn_adicionar_cli"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="#00BCD4"
             android:text="Adicionar Novo Cliente" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Para Editar um Cliente existente" />
 
         <Button
             android:id="@+id/btn_editar_cli"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="#00BCD4"
             android:text="Editar Cliente Existente" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver informações dos Cliente já existentes" />
 
         <Button
             android:id="@+id/btn_informacoes_cli"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="#00BCD4"
             android:text="Ver informações dos Clientes" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

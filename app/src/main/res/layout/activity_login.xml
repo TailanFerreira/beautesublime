@@ -60,9 +60,8 @@
 
         <Button
             android:id="@+id/btn_entrar"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:backgroundTint="#00BCD4"
             android:text="Entrar"
             app:iconTint="#00BCD4" />

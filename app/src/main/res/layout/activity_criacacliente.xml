@@ -90,6 +90,7 @@
                 android:id="@+id/btn_salvar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#00BCD4"
                 android:gravity="center"
                 android:text="Salvar" />
 
@@ -97,6 +98,7 @@
                 android:id="@+id/btn_voltar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#00BCD4"
                 android:text="Voltar" />
         </LinearLayout>
 

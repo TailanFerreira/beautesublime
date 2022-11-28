@@ -15,6 +15,7 @@ private Button btn_produtos;
 private EditText listagem_produtos;
 private Button btn_clientes;
 private Button btn_sobrancelhas;
+private Button btn_cilios;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,11 +47,20 @@ private Button btn_sobrancelhas;
             }
         });
 
-        Button btn_sobrancelhas = findViewById(R.id.btn_sobrancelhas);
+        Button btn_sobrancelhas = findViewById(R.id.btn_sobrancelha);
         btn_sobrancelhas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Sobrancelhas_informacoes.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btn_cilios = findViewById(R.id.btn_cilios);
+        btn_cilios.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Cilios_informacoes.class);
                 startActivity(intent);
             }
         });

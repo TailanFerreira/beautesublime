@@ -34,11 +34,11 @@ private Button btn_voltar;
             }
         });
 
-        Button btn_voltar = (Button) findViewById(R.id.btn_voltar_cili);
+        Button btn_voltar = (Button) findViewById(R.id.btn_voltar_sobran);
         btn_voltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Fichas_sobran.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }
         });

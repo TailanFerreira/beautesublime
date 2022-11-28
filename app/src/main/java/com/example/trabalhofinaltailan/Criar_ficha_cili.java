@@ -10,38 +10,39 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Criar_ficha_sobr extends AppCompatActivity {
+public class Criar_ficha_cili extends AppCompatActivity {
 
-    private EditText espaco_sobra;
+    private EditText tipo_cili;
+    private EditText tecnica;
     private EditText espessura;
-    private EditText altura_inicial;
-    private EditText altura_final;
+    private EditText curvatura;
+    private EditText cola;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_criar_ficha_sobr);
+        setContentView(R.layout.activity_criar_ficha_cili);
 
-        EditText espaco_sobra = findViewById(R.id.espa_sobra);
+        EditText tipo_cili = findViewById(R.id.tipo_cili);
+        EditText tecnica = findViewById(R.id.tecnica);
         EditText espessura = findViewById(R.id.espessura_ci);
-        EditText altura_inicial = findViewById(R.id.altura_ini);
-        EditText altura_final = findViewById(R.id.altura_final);
+        EditText cola = findViewById(R.id.cola);
 
-        Button btn_salvar = findViewById(R.id.btn_salvar_sobra);
+        Button btn_salvar = findViewById(R.id.btn_salvar_cili);
         btn_salvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Sobrancelha model = new Sobrancelha();
-                model.setEspaço_sobrancelha(espaco_sobra.getText().toString());
+                Cilios model = new Cilios();
+                model.setTipo_cilios(tipo_cili.getText().toString());
+                model.setTecnica(tecnica.getText().toString());
                 model.setEspessura(espessura.getText().toString());
-                model.setAltura_inicial(altura_inicial.getText().toString());
-                model.setAltura_final(altura_final.getText().toString());
+                model.setCola(cola.getText().toString());
 
-                SobrancelhaDAO dao = new SobrancelhaDAO(Criar_ficha_sobr.this);
+                CiliosDAO dao = new CiliosDAO(Criar_ficha_cili.this);
                 long id = dao.inserir(model);
 
-                Context contexto = Criar_ficha_sobr.this;
-                CharSequence texto = "Sobrancelha " + id + " inserido com sucesso.";
+                Context contexto = Criar_ficha_cili.this;
+                CharSequence texto = "Cílios " + id + " inserido com sucesso.";
                 int duracao = Toast.LENGTH_LONG; // Toast.LENGTH_LONG
 
                 Toast toast = Toast.makeText(contexto, texto, duracao);
@@ -49,7 +50,7 @@ public class Criar_ficha_sobr extends AppCompatActivity {
             }
         });
 
-        Button btn_voltar = findViewById(R.id.btn_voltar_sob);
+        Button btn_voltar = findViewById(R.id.btn_voltar_cili);
         btn_voltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

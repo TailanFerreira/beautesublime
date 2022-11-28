@@ -9,43 +9,37 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:gravity="center"
         android:orientation="vertical">
 
         <Button
             android:id="@+id/btn_cliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Clientes" />
+            android:backgroundTint="#00BCD4"
+            android:text="Clientes"
+            app:iconTint="#00BCD4" />
 
         <Button
-            android:id="@+id/btn_sobrancelhas"
+            android:id="@+id/btn_sobrancelha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sobrancelhas" />
+            android:backgroundTint="#00BCD4"
+            android:text="Sobrancelhas"
+            app:iconTint="#00BCD4" />
 
         <Button
             android:id="@+id/btn_cilios"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="#00BCD4"
             android:text="Cílios" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button" />
-
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button" />
 
         <Button
             android:id="@+id/btn_produtos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="#00BCD4"
             android:text="Produtos" />
 
         <TextView

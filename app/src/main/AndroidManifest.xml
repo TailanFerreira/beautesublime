@@ -33,6 +33,9 @@
         <activity android:name=".Criar_ficha_sobr" />
         <activity android:name=".Fichas_sobran" />
         <activity android:name=".Sobrancelhas_informacoes" />
+        <activity android:name=".Cilios_informacoes" />
+        <activity android:name=".Criar_ficha_cili" />
+        <activity android:name=".Fichas_cilios" />
     </application>
 
 </manifest>
