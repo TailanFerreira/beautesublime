@@ -12,7 +12,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 
 public class InformacoesClientes extends AppCompatActivity {
-private ListView lista_clientes;
+
+    private ListView lista_clientes;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -18,7 +18,6 @@ public class CiliosDAO {
 
     public long inserir(Cilios model) {
         ContentValues values = new ContentValues();
-        values.put("codigo_clientes", model.getCodigo_cliente());
         values.put("tipo_cilios", model.getTipo_cilios());
         values.put("tecnica", model.getTecnica());
         values.put("espessura", model.getEspessura());
@@ -31,16 +30,15 @@ public class CiliosDAO {
 
     public ArrayList<Cilios> listar() {
         ArrayList<Cilios> lista = new ArrayList<>();
-        Cursor cursor = banco.query("cilios", new String[]{"id", "cod_cli", "tipo_cili", "tecnica", "espessura", "curvatura", "cola"}, null, null, null, null, null);
+        Cursor cursor = banco.query("cilios", new String[]{"id", "tipo_cili", "tecnica", "espessura", "curvatura", "cola"}, null, null, null, null, null);
         while (cursor.moveToNext()) {
             Cilios model = new Cilios();
             model.setId(cursor.getInt(0));
-            model.setCodigo_cliente(cursor.getInt(1));
-            model.setTipo_cilios(cursor.getString(2));
-            model.setTecnica(cursor.getString(3));
-            model.setEspessura(cursor.getString(4));
-            model.setCurvatura(cursor.getString(5));
-            model.setCola(cursor.getString(6));
+            model.setTipo_cilios(cursor.getString(1));
+            model.setTecnica(cursor.getString(2));
+            model.setEspessura(cursor.getString(3));
+            model.setCurvatura(cursor.getString(4));
+            model.setCola(cursor.getString(5));
             lista.add(model);
         }
 
@@ -49,15 +47,14 @@ public class CiliosDAO {
 
     public Cilios ler(int id) {
         Cilios model = new Cilios();
-        Cursor cursor = banco.query("cilios", new String[]{"id", "cod_cli", "tipo_cili", "tecnica", "espessura", "curvatura", "cola"}, "id = ?", new String[]{String.valueOf(id)}, null, null, null);
+        Cursor cursor = banco.query("cilios", new String[]{"id", "tipo_cili", "tecnica", "espessura", "curvatura", "cola"}, "id = ?", new String[]{String.valueOf(id)}, null, null, null);
         while (cursor.moveToNext()) {
             model.setId(cursor.getInt(0));
-            model.setCodigo_cliente(cursor.getInt(1));
-            model.setTipo_cilios(cursor.getString(2));
-            model.setTecnica(cursor.getString(3));
-            model.setEspessura(cursor.getString(4));
-            model.setCurvatura(cursor.getString(5));
-            model.setCola(cursor.getString(6));
+            model.setTipo_cilios(cursor.getString(1));
+            model.setTecnica(cursor.getString(2));
+            model.setEspessura(cursor.getString(3));
+            model.setCurvatura(cursor.getString(4));
+            model.setCola(cursor.getString(5));
         }
         return model;
     }

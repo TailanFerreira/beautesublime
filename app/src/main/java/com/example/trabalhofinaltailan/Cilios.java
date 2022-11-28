@@ -2,7 +2,6 @@ package com.example.trabalhofinaltailan;
 
 public class Cilios {
     private int id;
-    private int codigo_cliente;
     private String tipo_cilios;
     private String tecnica;
     private String espessura;
@@ -13,17 +12,7 @@ public class Cilios {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getCodigo_cliente() {
-        return codigo_cliente;
-    }
-
-    public void setCodigo_cliente(int codigo_cliente) {
-        this.codigo_cliente = codigo_cliente;
-    }
+    public void setId(int id) {this.id = id;}
 
     public String getTipo_cilios() {
         return tipo_cilios;
@@ -69,7 +58,6 @@ public class Cilios {
     public String toString() {
         return "Cilios{" +
                 "id=" + id +
-                ", codigo_cliente=" + codigo_cliente +
                 ", tipo_cilios='" + tipo_cilios + '\'' +
                 ", tecnica='" + tecnica + '\'' +
                 ", espessura='" + espessura + '\'' +

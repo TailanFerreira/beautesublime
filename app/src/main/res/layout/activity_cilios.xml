@@ -6,34 +6,36 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/btn_voltar_sobran"
+        android:id="@+id/btn_voltar_cili"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Voltar"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="Se deseja criar uma nova ficha de sobrancelha" />
+            android:text="Se deseja criar uma nova ficha de cílios" />
 
         <Button
-            android:id="@+id/btn_ficha_sobran"
+            android:id="@+id/btn_ficha_cili"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
@@ -47,11 +49,12 @@
             android:text="Para vizualizar ou editar alguma informação já salva" />
 
         <Button
-            android:id="@+id/btn_vizualizar_sobran"
+            android:id="@+id/btn_vizualizar_cili"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="Vizualizar Sobrancelha" />
+            android:text="Vizualizar Cílio" />
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

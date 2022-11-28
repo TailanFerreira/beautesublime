@@ -53,8 +53,7 @@ public class Criar_ficha_sobr extends AppCompatActivity {
         btn_voltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Sobrancelhas_informacoes.class);
-                startActivity(intent);
+
             }
         });
     }
